@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./img/kids.jpg"
+import logo from "../images/kids.jpg"
 
 const ImageMap = () =>(
 <>
@@ -9,5 +9,6 @@ const ImageMap = () =>(
         <area shape="rect" coords="220, 10, 380, 200" href="http://www.facebook.com" target="_blank" alt="페이스북"/>
     </map>
 </>)
+
 
 export default ImageMap
