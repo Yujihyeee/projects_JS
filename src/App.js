@@ -14,6 +14,31 @@ import Home from './components/Home';
 import Navigation from './components/Navigation';
 import styled from 'styled-components';
 import Header from './components/Header';
+import NavigationForJavaScript from './components/NavigatiomForJavaScript';
+import Basic from './modern-javascript/chap-01-basic/Basic'
+import ArrowFunction from './modern-javascript/chap-02-arrow-function/ArrowFunction'
+import Arguments from './modern-javascript/chap-03-arguments/Arguments'
+import TemplateLiteral from './modern-javascript/chap-04-template-literal/TemplateLiteral'
+import LiteralMethod from './modern-javascript/chap-05-literal-method/LiteralMethod'
+import Destructuring from './modern-javascript/chap-06-destucturing/Destructuring'
+import Loop from './modern-javascript/chap-07-loop/Loop'
+import ArrayMethod from './modern-javascript/chap-08-array-method/ArrayMethod'
+import SpreadOperatorRestParameter from './modern-javascript/chap-09-spread-oprator-rest-parameter/SpreadOperatorRestParameter'
+import ObjectLiteral from './modern-javascript/chap-10-object-literal/ObjectLiteral'
+import Symbol from './modern-javascript/chap-11-symbol/Symbol'
+import Class from './modern-javascript/chap-12-class/Class'
+import Promise from './modern-javascript/chap-13-promise/Promise'
+import Generator from './modern-javascript/chap-14-generator/Generator'
+import Proxy from './modern-javascript/chap-15-proxy/Proxy'
+import SetMap from './modern-javascript/chap-16-set-map/SetMap'
+import Array from './modern-javascript/chap-17-array/Array'
+import ES2017 from './modern-javascript/chap-18-es2017/ES2017'
+import AsnycAwait from './modern-javascript/chap-19-async-await/AsnycAwait'
+import ES2018 from './modern-javascript/chap-20-es2018/ES2018'
+import ES2019 from './modern-javascript/chap-21-es2019/ES2019'
+import ES2020 from './modern-javascript/chap-22-es2020/ES2020'
+import TypeScript from './modern-javascript/chap-23-typescript/TypeScript'
+
 
 
 const App = () => (
@@ -22,6 +47,7 @@ const App = () => (
         <Header />
       </Layout>
     <Navigation/>
+    <NavigationForJavaScript/>
     <Switch>
     <Route exact path='/' component = {Home}/>
     <Redirect from='/home' to = {'/'}/>
@@ -35,8 +61,31 @@ const App = () => (
     <Route exact path='/date-month' component = {DateMonth}/>
     <Route exact path='/number-range' component = {NumberRange}/>
     <Route exact path='/color' component = {Color}/>
-    </Switch></>
-  );
+    <Route exact path='/basic' component = {Basic}/>
+    <Route exact path='/arrowfunction' component = {ArrowFunction}/>
+    <Route exact path='/arguments' component = {Arguments}/>
+    <Route exact path='/template-literal' component = {TemplateLiteral}/>
+    <Route exact path='/literal-method' component = {LiteralMethod}/>
+    <Route exact path='/destructuring' component = {Destructuring}/>
+    <Route exact path='/loop' component = {Loop}/>
+    <Route exact path='/array-method' component = {ArrayMethod}/>
+    <Route exact path='/spread-operator-rest-parameter' component = {SpreadOperatorRestParameter}/>
+    <Route exact path='/object-literal' component = {ObjectLiteral}/>
+    <Route exact path='/symbol' component = {Symbol}/>
+    <Route exact path='/class' component = {Class}/>
+    <Route exact path='/promise' component = {Promise}/>
+    <Route exact path='/generator' component = {Generator}/>
+    <Route exact path='/proxy' component = {Proxy}/>
+    <Route exact path='/set-map' component = {SetMap}/>
+    <Route exact path='/array' component = {Array}/>
+    <Route exact path='/es2017' component = {ES2017}/>
+    <Route exact path='/asnyc-await' component = {AsnycAwait}/>
+    <Route exact path='/es2018' component = {ES2018}/>
+    <Route exact path='/es2019' component = {ES2019}/>
+    <Route exact path='/es2020' component = {ES2020}/>
+    <Route exact path='/type-script' component = {TypeScript}/>
+    </Switch>
+</>);
 
 const Layout = styled.div`
     margin: 0 auto;
