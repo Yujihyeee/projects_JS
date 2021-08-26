@@ -38,18 +38,18 @@ import ES2018 from './modern-javascript/chap-20-es2018/ES2018'
 import ES2019 from './modern-javascript/chap-21-es2019/ES2019'
 import ES2020 from './modern-javascript/chap-22-es2020/ES2020'
 import TypeScript from './modern-javascript/chap-23-typescript/TypeScript'
+import HomePage from './pages/HomePage';
 
 
 
 const App = () => (
     <>
     <Layout>
-        <Header />
-      </Layout>
+    <Header />
     <Navigation/>
     <NavigationForJavaScript/>
     <Switch>
-    <Route exact path='/' component = {Home}/>
+    <Route exact path='/' component = {HomePage}/>
     <Redirect from='/home' to = {'/'}/>
     <Route exact path='/login' component = {Login}/>
     <Route exact path='/join' component = {Join}/>
@@ -85,6 +85,7 @@ const App = () => (
     <Route exact path='/es2020' component = {ES2020}/>
     <Route exact path='/type-script' component = {TypeScript}/>
     </Switch>
+    </Layout>
 </>);
 
 const Layout = styled.div`
