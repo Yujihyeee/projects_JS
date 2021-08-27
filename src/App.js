@@ -1,15 +1,6 @@
 import React , {component} from 'react';
 import {Route, Redirect, Switch} from 'react-router-dom'
-import CourseRegister from './components/CourseRegister'
-import OnlineProfile from './components/OnlineProfile';
-import Join from './components/Join'
-import Login from './components/Login';
-import SchoolStatus from './components/SchoolStatus';
-import ImageMap from './components/ImageMap';
-import Anchor from './components/Anchor'
-import DateMonth from './components/DateMonth'
-import NumberRange from './components/NumberRange'
-import Color from './components/Color'
+import {CourseRegister, OnlineProfile, Join, Login, SchoolStatus, ImageMap, Anchor, DateMonth, NumberRange, Color} from './components/index'
 import Home from './components/Home';
 import Navigation from './components/Navigation';
 import styled from 'styled-components';
